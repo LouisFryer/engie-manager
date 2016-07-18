@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EngieManager</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="ui container">
+		<div class="ui segments">
+			<div class="ui segment">
+				<%= yield %>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

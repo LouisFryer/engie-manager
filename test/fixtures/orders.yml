@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  poNumber: MyString
+  date: 2016-07-05
+  contactID: 1
+  amount: 9.99
+  unitCount: 1
+  targetDate: 2016-07-05
+  accepted: false
+  ready: false
+  dispatched: false
+  delivered: false
+  invoiced: false
+  invoiceNumber: 1
+  aid: false
+
+two:
+  poNumber: MyString
+  date: 2016-07-05
+  contactID: 1
+  amount: 9.99
+  unitCount: 1
+  targetDate: 2016-07-05
+  accepted: false
+  ready: false
+  dispatched: false
+  delivered: false
+  invoiced: false
+  invoiceNumber: 1
+  aid: false

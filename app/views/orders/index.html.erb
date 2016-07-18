@@ -1,0 +1,59 @@
+
+
+<div class="ui center aligned header">
+  <h1 class="ui center aligned header">Listing Orders</h1>
+</div>
+<div class="ui segment">
+
+  <p id="notice"><%= notice %></p>
+
+  
+
+  <table class="ui celled striped table">
+    <thead>
+      <tr>
+        <th>PO Number</th>
+        <th>Date</th>
+        <th>Contact</th>
+        <th>Amount</th>
+        <th>Unit's</th>
+        <th>Target Date</th>
+        <th>Accepted</th>
+        <th>Ready</th>
+        <th>Dispatched</th>
+        <th>Delivered</th>
+        <th>Invoiced</th>
+        <th>Invoice Number</th>
+        <th>Paid</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @orders.each do |order| %>
+        <tr>
+          <td><%= order.poNumber %></td>
+          <td><%= order.date %></td>
+          <td><%= order.contactID %></td>
+          <td><%= order.amount %></td>
+          <td><%= order.unitCount %></td>
+          <td><%= order.targetDate %></td>
+          <td><%= order.accepted %></td>
+          <td><%= order.ready %></td>
+          <td><%= order.dispatched %></td>
+          <td><%= order.delivered %></td>
+          <td><%= order.invoiced %></td>
+          <td><%= order.invoiceNumber %></td>
+          <td><%= order.aid %></td>
+          <td><%= link_to 'Show', order %></td>
+          <td><%= link_to 'Edit', edit_order_path(order) %></td>
+          <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Order', new_order_path, :class => "ui primary button" %>
+</div>
